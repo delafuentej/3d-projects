@@ -3,20 +3,6 @@ import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
 
-window.addEventListener("message", (event) => {
-  // Verificar origen seguro
-  if (event.origin !== "http://localhost:5174") return;
-
-  const action = event.data.action;
-  if (action === "back") {
-    window.history.back();
-  } else if (action === "forward") {
-    window.history.forward();
-  } else if (action === "reload") {
-    window.location.reload();
-  }
-});
-
 document.querySelector("#app").innerHTML = `
   <div>
     <a href="https://vite.dev" target="_blank">
