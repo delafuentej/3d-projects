@@ -38,7 +38,7 @@ h1 {
 
 /* Contenedor scrollable */
 .scrollable {
-  height: calc(100vh - 160px); /* Ajusta según altura de header y footer */
+  height: calc(100vh - 160px); /* Ajusta según altura de header + footer */
   overflow-y: scroll;
   overflow-x: hidden;
   -ms-overflow-style: none; /* Edge/IE */
@@ -88,4 +88,72 @@ footer {
   padding: 2rem 0 1rem;
   font-size: 0.9rem;
   color: #666;
+}
+
+/* ===========================
+   MEDIA QUERIES PARA MOVILES
+=========================== */
+
+/* Tablets y móviles grandes */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .card {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Móviles medianos */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .card {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .card {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
 }
