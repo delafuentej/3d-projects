@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   padding: 2rem;
-  /* overflow: hidden */
+  overflow: hidden;
 }
 
 header {
@@ -59,16 +59,16 @@ a {
   box-shadow: 0 0 0 transparent;
   border: 1px solid #2c2c2c;
 }
-
 .scrollable {
-  overflow: auto;
-  scrollbar-width: none;
-  scrollbar-height: none;
-  -ms-overflow-style: none;
+  height: 100vh; /* ocupa todo el viewport */
+  overflow-y: scroll; /* scroll vertical permitido */
+  overflow-x: hidden; /* evitar scroll horizontal */
+  -ms-overflow-style: none; /* Edge / IE */
+  scrollbar-width: none; /* Firefox */
 }
 
 .scrollable::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome, Safari, Edge */
 }
 .card:hover {
   background: #00bfa6;
