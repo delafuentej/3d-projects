@@ -230,7 +230,7 @@ const projects = [
     title: "Awwwards Clone: Adidas / Foot Locker",
     img: projectImages.p33,
     tags: "Landing",
-    url: "#",
+    url: "https://r3f-awwwards-adidas.vercel.app/",
   },
   {
     id: "p-34",
@@ -272,14 +272,14 @@ const projects = [
     title: "Wizard",
     img: projectImages.p39,
     tags: "3D",
-    url: "#",
+    url: "https://r3f-wizard-game-sigma.vercel.app/",
   },
   {
     id: "p-40",
-    title: "Rock Paper Scissors",
+    title: "Rock-Paper-Scissors",
     img: projectImages.p40,
-    tags: "Game",
-    url: "#",
+    tags: "Game · React",
+    url: "https://react-rock-paper-scissors-game-3s8y.vercel.app/",
   },
   {
     id: "p-41",
@@ -308,6 +308,14 @@ const projects = [
     img: projectImages.p44,
     tags: "3D Scene",
     url: "https://r3f-staging.vercel.app/",
+  },
+
+  {
+    id: "p-45",
+    title: "My Codepen Projects",
+    img: projectImages.p45,
+    tags: "GSAP · Tree.js · Shaders · Creative ",
+    url: "https://codepen.io/delafuentej",
   },
 ];
 

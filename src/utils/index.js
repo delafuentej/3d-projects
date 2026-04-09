@@ -42,7 +42,7 @@ import p41 from "/images/projects/p41.webp";
 import p42 from "/images/projects/p42.webp";
 import p43 from "/images/projects/p43.webp";
 import p44 from "/images/projects/p44.webp";
-
+import p45 from "/images/projects/p45.webp";
 export {
   p1,
   p2,
@@ -88,4 +88,5 @@ export {
   p42,
   p43,
   p44,
+  p45,
 };
