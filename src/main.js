@@ -1,4 +1,5 @@
 import projects from "./data.js";
+import gsap from "gsap";
 
 const app = document.querySelector("#app");
 
@@ -39,6 +40,17 @@ filtersContainer.innerHTML = `
 const filterBtns = document.querySelectorAll(".filter-btn");
 console.log(filterBtns);
 
+const animateGrid = () => {
+  const gridItems = document.querySelectorAll(".grid-item");
+
+  gsap.from(gridItems, {
+    duration: 0.5,
+    opacity: 0,
+    stagger: 0.2,
+    ease: "power2.inOut",
+  });
+};
+
 // 🔥 render dinámico de TODOS tus proyectos
 function renderProjects(list) {
   container.innerHTML = list
@@ -72,6 +84,8 @@ function renderProjects(list) {
       `,
     )
     .join("");
+
+  animateGrid();
 }
 
 renderProjects(projects);
@@ -105,3 +119,5 @@ filtersContainer.addEventListener("click", (e) => {
 
   renderProjects(filtered);
 });
+
+// gsap
