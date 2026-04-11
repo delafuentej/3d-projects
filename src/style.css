@@ -45,6 +45,27 @@ h1 {
   padding: 1rem;
 }
 
+.filters {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.filter-btn {
+  border: 1px solid #00e5c2;
+  border-radius: 15px;
+  padding: 0.15rem;
+  margin-top: 3px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.active {
+  color: #00e5c2;
+}
+.filter-btn:not(.active) {
+  opacity: 0.2;
+}
+
 .scrollable::-webkit-scrollbar {
   display: none; /* Chrome, Safari y Edge */
 }
