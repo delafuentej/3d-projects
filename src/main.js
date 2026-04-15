@@ -39,7 +39,7 @@ filtersContainer.innerHTML = `
 `;
 
 const filterBtns = document.querySelectorAll(".filter-btn");
-console.log(filterBtns);
+//console.log(filterBtns);
 
 const animateGrid = () => {
   const gridItems = document.querySelectorAll(".grid-item");
@@ -92,7 +92,7 @@ function renderProjects(list) {
 renderProjects(projects);
 
 filtersContainer.addEventListener("click", (e) => {
-  console.log(e.target);
+  // console.log(e.target);
   if (e.target.tagName !== "BUTTON") return;
 
   const tagBtns = filtersContainer.querySelectorAll("button");
@@ -105,7 +105,7 @@ filtersContainer.addEventListener("click", (e) => {
   activeTag.classList.toggle("active");
 
   const tag = e.target.dataset.tag;
-  console.log("tag", tag);
+  // console.log("tag", tag);
 
   if (tag === "all") {
     // e.target.classList.add("active");
@@ -116,7 +116,7 @@ filtersContainer.addEventListener("click", (e) => {
   const filtered = projects.filter((project) =>
     project.tags?.split(" · ").includes(tag),
   );
-  console.log("filtered", filtered);
+  //console.log("filtered", filtered);
 
   renderProjects(filtered);
 });
