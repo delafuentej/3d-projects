@@ -3,6 +3,8 @@ import gsap from "gsap";
 
 const app = document.querySelector("#app");
 
+const year = new Date().getFullYear();
+
 const allTags = [
   ...new Set(projects.flatMap((p) => (p.tags ? p.tags.split(" · ") : []))),
 ];
@@ -24,8 +26,7 @@ app.innerHTML = `
   </main>
 
   <footer>
-    <p>Made by Jesús de la Fuente</p>
-    <p>&copy; 2025 All rights reserved.</p>
+    <p>delafuentej&copy;<span>${year}.</span> All rights reserved</p>
   </footer>
 `;
 
