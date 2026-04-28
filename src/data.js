@@ -23,6 +23,14 @@ const projects = [
     url: "https://three-js-glsl-earth-shaders.vercel.app/",
   },
   {
+    id: "p-3b",
+    title: "Solar System",
+    img: projectImages.p3b,
+    tags: "Scene · Shaders · 3D Models",
+    url: "https://threejs-solar-system-smoky.vercel.app/",
+  },
+
+  {
     id: "p-4",
     title: "Portal Scene",
     img: projectImages.p4,
@@ -309,11 +317,18 @@ const projects = [
     tags: "Scene · 3D Models",
     url: "https://r3f-staging.vercel.app/",
   },
-
   {
     id: "p-45",
-    title: "My Codepen Projects",
+    title: "Physics Balls- Interactive",
     img: projectImages.p45,
+    tags: "Physics · 3D Models",
+    url: "https://threejs-physics-rapier-balls.vercel.app/",
+  },
+
+  {
+    id: "p-46",
+    title: "My Codepen Projects",
+    img: projectImages.p46,
     tags: "GSAP · Shaders · Creative ",
     url: "https://codepen.io/delafuentej",
   },

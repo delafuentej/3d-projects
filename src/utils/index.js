@@ -1,6 +1,7 @@
 import p1 from "/images/projects/p1.webp";
 import p2 from "/images/projects/p2.webp";
 import p3 from "/images/projects/p3.webp";
+import p3b from "/images/projects/p3b.webp";
 import p4 from "/images/projects/p4.webp";
 import p5 from "/images/projects/p5.webp";
 import p6 from "/images/projects/p6.webp";
@@ -43,10 +44,12 @@ import p42 from "/images/projects/p42.webp";
 import p43 from "/images/projects/p43.webp";
 import p44 from "/images/projects/p44.webp";
 import p45 from "/images/projects/p45.webp";
+import p46 from "/images/projects/p46.webp";
 export {
   p1,
   p2,
   p3,
+  p3b,
   p4,
   p5,
   p6,
@@ -89,4 +92,5 @@ export {
   p43,
   p44,
   p45,
+  p46,
 };
