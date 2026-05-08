@@ -57,7 +57,7 @@ function renderProjects(list) {
   container.innerHTML = list
     .map(
       (project) => `
-        <a class="grid-item" href=${project.url}>
+        <a class="grid-item" href=${project.url} target="_blank" rel="noopener noreferrer" >
           <div 
             class="grid-item-img"
             style="background-image: url(${project.img})"
