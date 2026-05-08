@@ -219,13 +219,13 @@ const projects = [
     tags: "Creative · Shaders",
     url: "https://react-glsl-images-gallery-magnifyin.vercel.app/",
   },
-  {
-    id: "p-31",
-    title: "Awwwards Clone: Spylt",
-    img: projectImages.p31,
-    tags: "Shaders · Landing Page",
-    url: "https://react-awwards-spylt-clone.vercel.app/",
-  },
+  // {
+  // id: "p-31",
+  // title: "Awwwards Clone: Spylt",
+  // img: projectImages.p31,
+  // tags: "Shaders · Landing Page",
+  // url: "https://react-awwards-spylt-clone.vercel.app/",
+  // },
   {
     id: "p-32",
     title: "Awwwards Clone: Zentry",
